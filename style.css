@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap");
+
+/* font-family: "Poppins", sans-serif; 
+font-family: "Syncopate", sans-serif;
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  padding: 15px;
+  background-color: burlywood;
+  text-align: center;
+}
+
+header a {
+  font-weight: 600;
+  font-size: 24px;
+  color: brown;
+  font-family: "Syncopate", sans-serif;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+#input {
+  border: 1px solid burlywood;
+  box-shadow: 5px 5px burlywood;
+  border-radius: 15px;
+  padding: 20px;
+  width: auto;
+  font-size: 20px;
+  background-color: antiquewhite;
+  height: fit-content;
+}
+
+.date-container {
+  text-align: center;
+  font-weight: 600;
+}
+
+.date-container input {
+  border-radius: 15px;
+  border: 1px solid burlywood;
+  padding: 5px;
+}
+
+.radio-button-container {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.radio-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.radio-button__input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.radio-button__label {
+  display: inline-block;
+  padding-left: 22px;
+  margin-bottom: 10px;
+  position: relative;
+  font-size: 14px;
+  color: #000;
+  font-weight: 500;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.radio-button__custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid rgb(177, 130, 69);
+  transition: all 0.3s ease;
+}
+
+.radio-button__input:checked + .radio-button__label .radio-button__custom {
+  background-color: rgb(177, 130, 69);
+  border-color: transparent;
+  transform: scale(0.8);
+  box-shadow: 0 0 20px rgb(177, 130, 69);
+}
+
+.radio-button__input:checked + .radio-button__label {
+  color: rgb(177, 130, 69);
+  font-weight: 600;
+}
+
+.radio-button__label:hover .radio-button__custom {
+  transform: scale(1.2);
+  border-color: burlywood;
+  box-shadow: 0 0 20px rgb(177, 130, 69);
+}
+
+.task-container .timer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.task-container .timer input {
+  border-radius: 15px;
+  border: 1px solid burlywood;
+  padding: 5px;
+}
+
+.task-container .task-color {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 12px;
+  margin-top: 20px;
+}
+
+.task-container .task-color input[type="text"] {
+  border-radius: 15px;
+  border: 1px solid burlywood;
+  height: 30px;
+  width: 220px;
+  padding: 5px 8px;
+}
+
+/* .task-container .task-color input[type="color"] {
+  border-radius: 15px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+} */
+
+/* .task-container .task-color input[type="color"]::-webkit-color-swatch {
+  border-radius: 50%;
+  border: none;
+} */
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: -10px;
+  gap: 10px;
+}
+
+.buttons-container button {
+  color: rgb(177, 130, 69);
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid burlywood;
+  background: antiquewhite;
+  box-shadow: 3px 3px burlywood;
+  cursor: pointer;
+  margin: 30px 0;
+}
+
+button:active {
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}
+
+#output {
+  border: 1px solid burlywood;
+  box-shadow: 5px 5px burlywood;
+  border-radius: 15px;
+  padding: 20px;
+  width: auto;
+  font-size: 20px;
+  background-color: antiquewhite;
+  width: 60%;
+}
+
+#output h1 {
+  font-family: "Syncopate", sans-serif;
+  color: brown;
+  font-size: 30px;
+  text-align: center;
+  /* font-weight: 400;  */
+}
+
+#output .datetime {
+  text-align: center;
+  font-size: 16px;
+  color: rgb(177, 130, 69);
+  font-weight: 600;
+}
+
+.timebox-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timebox-container .head-cell {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  background-color: burlywood;
+  padding: 5px 10px;
+  width: 60%;
+  border-radius: 10px;
+  border: 1px solid rgba(177, 130, 69, 0.479);
+  color: brown;
+  font-weight: 600;
+  margin: 10px 0px;
+}
+
+.timebox-container .timefield {
+  width: 30%;
+  text-align: center;
+}
+
+.timebox-container .taskfield {
+  width: 70%;
+  text-align: center;
+  overflow: visible;
+  border-left: 1px dashed brown;
+  padding: 0px 10px;
+}
+
+.timebox-container .addtask {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  background-color: rgba(222, 184, 135, 0.562);
+  padding: 5px 10px;
+  width: 60%;
+  border-radius: 10px;
+  border: 1px solid rgba(177, 130, 69, 0.279);
+  color: black;
+  margin: 10px 0px;
+  font-size: 18px;
+}
+
+#output .watermark,
+a {
+  color: brown;
+  font-family: "Syncopate", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .timebox-container .head-cell {
+    width: 90%;
+  }
+  .timebox-container .addtask {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  main {
+    flex-direction: column-reverse;
+  }
+  .radio-button-container {
+    align-items: center;
+    justify-content: center;
+  }
+  .radio-button__label {
+    font-size: 14px;
+  }
+  .timer {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .timer input {
+    width: auto;
+  }
+  .task-color #task {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column-reverse;
+  }
+  .radio-button__label {
+    font-size: 10px;
+  }
+  .task-container {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .timer input {
+    width: 90%;
+  }
+  #output,
+  #input {
+    width: auto;
+  }
+  .head-cell,
+  .addtask,
+  .timefield,
+  .taskfield {
+    font-size: 14px;
+  }
+  .timebox-container .head-cell {
+    width: 90%;
+  }
+  .timebox-container .addtask {
+    width: 90%;
+  }
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>TimeBoxing | HDz</title>
+  </head>
+  <body>
+    <header><a href="index.html">TimeBoxing</a></header>
+    <main>
+      <div id="input">
+        <form>
+          <div class="date-container">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" />
+          </div>
+          <div class="radio-button-container">
+            <div class="radio-button">
+              <input
+                type="radio"
+                class="radio-button__input"
+                id="radio1"
+                name="radio-group"
+              />
+              <label class="radio-button__label" for="radio1">
+                <span class="radio-button__custom"></span>
+                Mon
+              </label>
+            </div>
+            <div class="radio-button">
+              <input
+                type="radio"
+                class="radio-button__input"
+                id="radio2"
+                name="radio-group"
+              />
+              <label class="radio-button__label" for="radio2">
+                <span class="radio-button__custom"></span>
+                Tue
+              </label>
+            </div>
+            <div class="radio-button">
+              <input
+                type="radio"
+                class="radio-button__input"
+                id="radio3"
+                name="radio-group"
+              />
+              <label class="radio-button__label" for="radio3">
+                <span class="radio-button__custom"></span>
+                Wed
+              </label>
+            </div>
+            <div class="radio-button">
+              <input
+                type="radio"
+                class="radio-button__input"
+                id="radio4"
+                name="radio-group"
+              />
+              <label class="radio-button__label" for="radio4">
+                <span class="radio-button__custom"></span>
+                Thu
+              </label>
+            </div>
+            <div class="radio-button">
+              <input
+                type="radio"
+                class="radio-button__input"
+                id="radio5"
+                name="radio-group"
+              />
+              <label class="radio-button__label" for="radio5">
+                <span class="radio-button__custom"></span>
+                Fri
+              </label>
+            </div>
+            <div class="radio-button">
+              <input
+                type="radio"
+                class="radio-button__input"
+                id="radio6"
+                name="radio-group"
+              />
+              <label class="radio-button__label" for="radio6">
+                <span class="radio-button__custom"></span>
+                Sat
+              </label>
+            </div>
+            <div class="radio-button">
+              <input
+                type="radio"
+                class="radio-button__input"
+                id="radio7"
+                name="radio-group"
+              />
+              <label class="radio-button__label" for="radio7">
+                <span class="radio-button__custom"></span>
+                Sun
+              </label>
+            </div>
+          </div>
+          <hr
+            style="
+              border: none;
+              border-top: 1px dashed burlywood;
+              margin-bottom: 10px;
+            "
+          />
+          <div class="task-container">
+            <div class="timer">
+              <label for="from-time">From</label>
+              <input type="time" id="from-time" name="from-time" />
+              <label for="to-time">To</label>
+              <input type="time" id="to-time" name="to-time" />
+            </div>
+            <div class="task-color">
+              <label for="task">Task </label>
+              <input type="text" id="task" placeholder="Enter Your Task" />
+              <!-- <input type="color" id="colorpicker" /> -->
+            </div>
+          </div>
+          <hr
+            style="
+              border: none;
+              border-top: 1px dashed burlywood;
+              margin-top: 20px;
+            "
+          />
+          <div class="buttons-container">
+            <button id="deleteLast" type="button">Delete Last</button>
+            <button id="addTask" type="button">Add</button>
+            <button id="downloadBtn" type="button">Download</button>
+          </div>
+        </form>
+      </div>
+      <div id="output">
+        <h1>Time Box</h1>
+        <hr
+          style="
+            border: none;
+            border-top: 1px dashed burlywood;
+            margin-top: 10px;
+            margin-bottom: 10px;
+          "
+        />
+        <p class="datetime">
+          <span class="getday"></span>
+          &nbsp;|&nbsp;
+          <span class="getdate"></span>
+        </p>
+        <div class="timebox-container" id="timebox">
+          <div class="head-cell">
+            <p class="timefield">Time</p>
+            <p class="taskfield">Task</p>
+          </div>
+
+          <!-- <div class="addtask">
+            <p class="timefield">0600-0700</p>
+            <p class="taskfield">Exercise</p>
+          </div> -->
+        </div>
+        <p class="watermark">
+          Made by <a href="https://github.com/hdz-088/">HDz</a>
+        </p>
+      </div>
+    </main>
+    <!-- Include html2canvas from a CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
