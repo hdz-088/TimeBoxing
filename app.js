@@ -98,7 +98,7 @@ function downloadImg() {
     // Create a download link
     const downloadLink = document.createElement("a");
     downloadLink.href = imgData;
-    downloadLink.download = `${getDateValue()}-website.png`;
+    downloadLink.download = `${getDateValue()}.png`;
 
     // Trigger the download
     downloadLink.click();
