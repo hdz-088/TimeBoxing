@@ -53,9 +53,6 @@ function findDayOfWeek() {
   }
 }
 
-// addedDate = getDateValue();
-// addedDay = findDayOfWeek();
-
 function addTaskDiv() {
   // adds Time and Task in .addTask div
   taskTime = setTime();
@@ -118,5 +115,12 @@ function addTask() {
 }
 
 document.getElementById("addTask").addEventListener("click", addTask);
+document.getElementById("task").addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    console.log("Enter pressed");
+    addTask();
+  }
+});
 document.getElementById("deleteLast").addEventListener("click", deleteLast);
 document.getElementById("downloadBtn").addEventListener("click", downloadImg);
