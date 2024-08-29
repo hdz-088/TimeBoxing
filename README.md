@@ -1,7 +1,7 @@
 # Time Block Creator
-
-<h1 style="text-align: center; font-size: 50px;"><img src="img/favicon.png" height="50px"> TimeBoxing</h1>
-
+<p align="center">
+   <img src="img/favicon.png" height="100px">
+</p>
 A simple web-based tool that allows users to create, edit, and export time blocks. This project is built using HTML, CSS, JavaScript, and `html2canvas`. Users can input tasks with specific dates, days, and times, and visualize their schedule in a clean and organized manner. The tool also allows users to delete the last added task and export the created time block as an image.
 
 ## Features
@@ -12,11 +12,14 @@ A simple web-based tool that allows users to create, edit, and export time block
 - **Responsive Design**: The layout adjusts for different screen sizes, providing a great user experience on both desktop and mobile devices.
 
 ## Demo
-
-<div style="display:flex; align-items:center; justify-contents:center; gap:10px;">
+<p align="center">
 <img src="img/mockup.png" height="450px">
+</p>
+
+### Output
+<p align="center">
 <img src="img/result.jpg" height="200px" style="border-radius:20px;">
-</div>
+</p>
 
 ## How to Use
 
