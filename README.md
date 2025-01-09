@@ -89,10 +89,12 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Contact
+## 🫱🏻‍🫲🏻 Connect With Me
 
-For any inquiries, feel free to reach out:
+- Portfolio: <a href="https://hdzala.vercel.app/?ref=github">Portfolio</a>
+- Other Projects: <a href="https://hdz-projectvault.vercel.app/">Project Vault</a>
+- Email: <a href="mailto:hdz088@outlook.com">hdz088@outlook.com</a>
+- Instagram: <a href="https://instagram.com/hdz_088">hdz_088</a>
+- LinkedIn: <a href="https://linkedin.com/in/hdz088/">hdz088</a>
 
-Email: <a href="mailto:hdz088@outlook.com">hdz088@outlook.com</a>
-<br>
-Resume: <a href="https://drive.google.com/file/d/1LLHtmId7wi6zRWCz5_BH5VkniBkrx0X7/">Resume</a>
+---
